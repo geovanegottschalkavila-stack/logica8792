@@ -1,17 +1,24 @@
 #include<stdio.h>
-#include<locale.h>
+#include<windows.h>
+#include<stdbool.h>
+    
+    bool ehPar(int numero){
+        return(numero % 2 == 0);
+
+    }
     
     int main(){
 
-        setlocale(LC_ALL, "pt_BR.UTF-8");
+       SetConsoleCP(65001);
+       SetConsoleOutputCP(65001);
 
-        int a = 5;
-        int b = 4;
+       int n;
 
-        printf("o maior número é: %d\n", (a + b));
-        printf("o resultado da subtração é: %d\n", (a - b));
-        printf("a multiplicação é: %d\n", (a * b));
-        printf("a divisão é: %d\n", (a / b));
+      printf("digite um número: ");
+      scanf("%d", &n);
+
+      printf("Antecessor: %d\n", -1);
+      printf("sucessor: %d\n", +1);
 
         return 0;
     }
