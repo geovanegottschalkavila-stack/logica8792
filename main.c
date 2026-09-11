@@ -18,7 +18,7 @@
        scanf("%d", &idade);
 
        printf("Equivale a %d meses\n" , idade * 12);
-       printf("Equivale a % dias (aproximado)\n", idade * 365);
+       printf("Equivale a %d dias (aproximado)\n", idade * 365);
 
       
 
