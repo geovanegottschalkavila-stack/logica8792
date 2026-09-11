@@ -12,13 +12,13 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-       int idade;
+       float valor, cotacao;
 
-       printf("digite a idade: ");
-       scanf("%d", &idade);
-
-       printf("Equivale a %d meses\n" , idade * 12);
-       printf("Equivale a %d dias (aproximado)\n", idade * 365);
+       printf("digite o valor em reais: ");
+       scanf("%f", &valor);
+       printf("Digite o valor da cotação do dolar: ");  
+       printf("%f", &cotacao);
+       printf("Valor em dolares: %.2f\n", valor / cotacao);
 
       
 
