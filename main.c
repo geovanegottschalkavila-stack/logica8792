@@ -17,8 +17,8 @@
       printf("digite um número: ");
       scanf("%d", &n);
 
-      printf("Antecessor: %d\n", -1);
-      printf("sucessor: %d\n", +1);
+      printf("Antecessor: %d\n", n - 1);
+      printf("sucessor: %d\n", n + 1);
 
         return 0;
     }
