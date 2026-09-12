@@ -12,13 +12,14 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-        float raio;
-        const float PI = 3.14159;
+        float n1, n2,n3, medida;
 
-        printf("digite o raio do circulo: ");
-        scanf("%f", &raio);
-        printf("Area: %.2f\n", 2 * PI * raio);
-        printf("Perímetro: %.2f\n", 2 * PI * raio);
+        printf("digite três notas: ");
+        scanf("%f %f %f", &n1, &n2, &n3);
+
+        medida = (n1 + n2 + n3) / 3;
         
+        printf("medida: %.2f\n", medida);
+
         return 0;
     }
