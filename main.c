@@ -12,14 +12,13 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-        float n1, n2,n3, medida;
+        float celcius, Fahrenheit;
 
-        printf("digite três notas: ");
-        scanf("%f %f %f", &n1, &n2, &n3);
+        printf("Digite a temperatura em Celcius: ");
+        scanf("%f", &celcius);
 
-        medida = (n1 + n2 + n3) / 3;
-        
-        printf("medida: %.2f\n", medida);
+        Fahrenheit = (celcius * 9.0 / 5.0) + 32;
+        printf("Fahrenheit: %.2f\n", Fahrenheit);
 
         return 0;
     }
