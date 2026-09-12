@@ -12,13 +12,16 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-        float celcius, Fahrenheit;
+        int segundos, horas, minutos, resto;
 
-        printf("Digite a temperatura em Celcius: ");
-        scanf("%f", &celcius);
+        printf("Digite a quantidade de segundos: ");
+        scanf("%d", &segundos);
 
-        Fahrenheit = (celcius * 9.0 / 5.0) + 32;
-        printf("Fahrenheit: %.2f\n", Fahrenheit);
+        horas = segundos / 3600;
+        minutos = (segundos % 3600) / 60;
+        resto = segundos % 60;
+
+        printf("%d horas, %d minutos e %d segundos\n", horas, minutos, resto);
 
         return 0;
     }
