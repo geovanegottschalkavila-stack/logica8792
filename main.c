@@ -12,12 +12,17 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-        int n;
+        int idade;
 
-        printf("Digite um número: ");
-        scanf("%d", &n);
+        printf("Digite um idade: ");
+        scanf("%d", &idade);
 
-        printf("%s", n % 2 == 0 ? "\nPar" : "\nImpar");
+        if(idade >= 18){
+            printf("voce é maior de idade!");
+        }else{
+            printf("Voce é menor de idade!")
+        }
+        
 
         return 0;
     }
