@@ -17,11 +17,7 @@
         printf("Digite um número: ");
         scanf("%d", &n);
 
-        if(n % 2 == 0){
-            printf("\nPar");
-        }else{
-            printf("\nImpar");
-        }
+        printf("%s", n % 2 == 0 ? "\nPar" : "\nImpar");
 
         return 0;
     }
