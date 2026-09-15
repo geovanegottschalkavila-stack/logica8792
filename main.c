@@ -17,10 +17,10 @@
         printf("Digite dois números: ");
         scanf("%d %d", &a, &b);
 
-        if(a == b){
-            printf("Os números são iguais!\n");
-        }else{
+        if(a != b){
             printf("Os números são diferentes!\n");
+        }else{
+            printf("Os números são iguais!\n");
         }
 
         return 0;
