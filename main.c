@@ -27,7 +27,7 @@
         scanf("%d", &d);
 
         printf("digite um numero para e: ");
-        scanf("%d", &d);
+        scanf("%d", &e);
 
         menor = a;
         maior = a;
