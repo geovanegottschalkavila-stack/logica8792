@@ -12,7 +12,7 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-        int a, b, c, d, e, menor;
+        int a, b, c, d, e, menor, maior;
 
         printf("digite um numero para a: ");
         scanf("%d", &a);
@@ -30,13 +30,20 @@
         scanf("%d", &d);
 
         menor = a;
+        maior = a;
 
         if(b < menor) menor = b;
         if(c < menor) menor = c;
         if(d < menor) menor = d;
         if(e < menor) menor = e;
-        
-        printf("menor: %d", menor);
+       
+        if(b > maior) maior = b;
+        if(c > maior) maior = c;
+        if(d > maior) maior = d;
+        if(e > maior) maior = e;
+
+        printf("menor: %d\n", menor);
+        printf("maior: %d", maior );
 
         return 0;
     }
