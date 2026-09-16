@@ -1,11 +1,6 @@
 #include<stdio.h>
 #include<windows.h>
-#include<stdbool.h>
-    
-    bool ehPar(int numero){
-        return(numero % 2 == 0);
 
-    }
     
     int main(){
 
@@ -21,7 +16,7 @@
         printf("\nQaula sua altura?");
         scanf("%f", &altura);
 
-        if((idade >= 18) && (altura >= 1.60)){
+        if((idade >= 18) || (altura >= 1.60)){
             printf("você pode brincar na roleta!");
         }else{
             printf("você não pode brincar na roleta");
