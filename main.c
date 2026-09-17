@@ -12,12 +12,10 @@
        printf("digite os tres lados do triangulo");
        scanf("%f %f %f", &a, &b, &c);
 
-       if(a == b && b == c){
-            printf("Equilátero!\n");
-       }else if(a == b || a == c || b == c){
-            printf("isoceles!\n");
+       if(a == b > c && a + c > b + c > a){
+            printf("Os lados foram um triângulo!\n");
        }else{
-            printf("Escaleno!\n");
+            printf("Os lados NÂO formam um triangulo!\n");
        }
 
         return 0;
