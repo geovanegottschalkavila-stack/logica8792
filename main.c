@@ -7,49 +7,29 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-       int nota;
+       float n1, n2, n3, media;
 
-       printf("Digite uma nota: ");
-       scanf("%d", &nota);
+       printf("Digite a nota 1: ");
+       scanf("%d", &n1);
 
-       switch(nota){
-            case 1:
-                printf("recuperação!");
-                break;
-            case 2:
-                printf("recuperação!");
-                break;
-            case 3:
-                printf("recuperação");
-                break;
-            case 4:
-                printf("recuoeração");
-                break;
-            case 5:
-                printf("recuperação");
-                break;
-            case 6:
-                printf("aprovado");
-                break;
-            case 7:
-                printf("aprovado");
-                break;
-            case 8:
-                printf("aprovado");
-                break;
-            case 9:
-                printf("aprovado");
-                break;
-            case 10:
-                printf("aprovado");
-                break;
-                
-            default:
-                printf("número invalido!!");
-                break;
-            
+        printf("digite a nota 1: ");
+        scanf("%f", &n1);
+        
+        printf("digite a nota 2: ");
+        scanf("%f", &n2);
+    
+        printf("digite a nota 3: ");
+        scanf("%f", &n3);
 
-       }
+        media = (n1 + n2 + n3) / 3;
+
+        if (media <= 4){
+            pritnf("aprovado");
+        }else if(media >= 7){
+            printf("recuperação");
+        }else{
+            printf("reprovado");
+        }
 
         return 0;
     }
