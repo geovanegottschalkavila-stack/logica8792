@@ -7,16 +7,25 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-       float a, b, c;
+   int opcao;
 
-       printf("digite os tres lados do triangulo");
-       scanf("%f %f %f", &a, &b, &c);
+   printf("--- SISTEMA DE PEDÁGIO ---\n");
+   printf("1 - Moto\n");
+   printf("2 - Carro Passeio\n");
+   scanf("%d", &opcao);
 
-       if(a == b > c && a + c > b + c > a){
-            printf("Os lados foram um triângulo!\n");
-       }else{
-            printf("Os lados NÂO formam um triangulo!\n");
-       }
-
+   switch (opcao)
+   {
+    case 1:
+        printf("Categoria: Moto | Tarifa: R$ 5,00\n");
+        break;
+    case 2:
+        printf("Categoria: Carro Passeio | Tarifa: R$ 10,00\n");
+        break;
+    default:
+        printf("Erro: Categoria não cadastrada no sistema.\n");
+        break;
+    }
         return 0;
+
     }
