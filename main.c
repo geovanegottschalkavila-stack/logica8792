@@ -12,6 +12,8 @@
    printf("--- SISTEMA DE PEDÁGIO ---\n");
    printf("1 - Moto\n");
    printf("2 - Carro Passeio\n");
+   printf("3 - caminhão\n");
+   printf("4 - ônibus\n");
    scanf("%d", &opcao);
 
    switch (opcao)
@@ -22,6 +24,13 @@
     case 2:
         printf("Categoria: Carro Passeio | Tarifa: R$ 10,00\n");
         break;
+    case 3:
+        printf("categoria: caminhão | Tarifa: R$ 25,00\n");
+        break;
+    case 4:
+        printf("categoria: ônibus | Tarifa: R$ 30,00\n");
+        break;
+
     default:
         printf("Erro: Categoria não cadastrada no sistema.\n");
         break;
