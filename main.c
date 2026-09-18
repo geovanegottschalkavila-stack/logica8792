@@ -7,41 +7,34 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-   int opcao;
+   int mes;
 
-   printf("--- SISTEMA DE PEDÁGIO ---\n");
-   printf("1 - Moto\n");
-   printf("2 - Carro Passeio\n");
-   printf("3 - caminhão\n");
-   printf("4 - ônibus\n");
-   printf("5 - bitrem\n");
-   printf("6 - 3 eixos\n");
-   scanf("%d", &opcao);
+   printf("digite em qual um mes para saber sua estação! (em numeros de 1 a 12)\n");
+   scanf("%d", &mes);
 
-   switch (opcao)
-   {
-    case 1:
-        printf("Categoria: Moto | Tarifa: R$ 5,00\n");
-        break;
-    case 2:
-        printf("Categoria: Carro Passeio | Tarifa: R$ 10,00\n");
-        break;
-    case 3:
-        printf("categoria: caminhão | Tarifa: R$ 25,00\n");
-        break;
-    case 4:
-        printf("categoria: ônibus | Tarifa: R$ 30,00\n");
-        break;
-    case 5:
-        printf("categoria: bitrem | tarifa: R$ 50,00\n");
-    case 6:
-        printf("categoria: 3 eixos | tarifa: R$ 60,00\n");
-        break;
-
-    default:
-        printf("Erro: Categoria não cadastrada no sistema.\n");
-        break;
-    }
+        switch(mes){
+            case 12:
+            case 1:
+            case 2:
+                printf("verão\n");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                printf("outono\n");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                printf("inverno\n");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                printf("primavera\n");
+                break;
+            
+        }
         return 0;
 
     }
