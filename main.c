@@ -14,6 +14,8 @@
    printf("2 - Carro Passeio\n");
    printf("3 - caminhão\n");
    printf("4 - ônibus\n");
+   printf("5 - bitrem\n");
+   printf("6 - 3 eixos\n");
    scanf("%d", &opcao);
 
    switch (opcao)
@@ -29,6 +31,11 @@
         break;
     case 4:
         printf("categoria: ônibus | Tarifa: R$ 30,00\n");
+        break;
+    case 5:
+        printf("categoria: bitrem | tarifa: R$ 50,00\n");
+    case 6:
+        printf("categoria: 3 eixos | tarifa: R$ 60,00\n");
         break;
 
     default:
