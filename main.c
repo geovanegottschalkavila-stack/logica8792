@@ -7,11 +7,11 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-       for(int i = 0; i <= 10; i++){
-            printf("%s\n %d", "\nOs numeros estão aumentando: --->>" ,i);
-       }
-      
-       printf("\nMeu for Funcionou!!");
+        char frutas[3][20] = {"Maçã", "Banana", "Laranja"};
+
+        printf("%s\n", frutas[0]);
+        printf("%s\n", frutas[1]);
+        printf("%s\n", frutas[2]);
 
         return 0;
 
