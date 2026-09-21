@@ -7,11 +7,12 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-        char frutas[3][20] = {"Maçã", "Banana", "Laranja"};
+        char nomes[4][20] = {"Pedro", "Davi", "Rose", "Geovane"};
 
-        printf("%s\n", frutas[0]);
-        printf("%s\n", frutas[1]);
-        printf("%s\n", frutas[2]);
+        printf("%s\n", nomes[0]);
+        printf("%s\n", nomes[1]);
+        printf("%s\n", nomes[2]);
+        printf("%s\n", nomes[3]);
 
         return 0;
 
