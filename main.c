@@ -7,11 +7,11 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-       for(int i = 10; i >= 0; i--){
-            printf("%d\n", i);
+       for(int i = 0; i <= 10000; i++){
+            printf("%d\n", "te amo");
+            i++;
        }
-
-       printf("\nBooommmmmmmm");
+       printf("\nMeu for Funcionou!!");
 
         return 0;
 
