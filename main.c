@@ -24,15 +24,12 @@
        SetConsoleOutputCP(65001);
 
         int resultado1 = somar(5, 3);
+        int resultado2 = subtrair(5, 3);
+        int resultado3 = multiplicar(5, 3);
+        int resultado4 = dividir(16, 2);
        printf("O resultado da soma é: %d\n", resultado1);
-
-       int resultado2 = subtrair(5, 3);
        printf("O resultado da subtração é: %d\n", resultado2);
-
-       int resultado3 = multiplicar(5, 3);
        printf("o resultado da multiplicação é: %d\n", resultado3);
-
-       int resultado4 = dividir(16, 2);
        printf("O resultado da divisão é: %d\n", resultado4);
 
 
