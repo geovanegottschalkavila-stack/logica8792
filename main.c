@@ -6,20 +6,14 @@
 
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
-        int soma = 0;
-        int i;
         
-       for(i = 1; i <= 5; i++){
-            //0+1
-            //1+2
-            //3+3
-            //6+4
-            //10+5
-            soma = soma + i;
-            //soma += i;
-       }
+       int numeros[3] = {1, 2, 3};
 
-       printf("soma é %d", soma);
+       numeros[0] = 10;
+
+       printf("%d", numeros[0]);
+
+
 
         return 0;
 
