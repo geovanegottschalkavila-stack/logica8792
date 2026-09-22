@@ -10,6 +10,13 @@
     int multiplicar( int a, int b){
         return a * b;
     }
+    int dividir(int a, int b){
+        if(b  <= 0){
+            printf("Ele precisa ser maior que 0!");
+        }else{
+            return a / b;
+        }
+    }
 
     int main(){
 
@@ -25,8 +32,9 @@
        int resultado3 = multiplicar(5, 3);
        printf("o resultado da multiplicação é: %d\n", resultado3);
 
-        
-       
+       int resultado4 = dividir(16, 2);
+       printf("O resultado da divisão é: %d\n", resultado4);
+
 
         return 0;
 
