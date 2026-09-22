@@ -1,16 +1,17 @@
 #include<stdio.h>
 #include<windows.h>
 
-    void saudar(){
-        printf("Olá Mundo\n");
-        printf("Que belo dia\n");
+    void saudar(const char *nome){
+        printf("Olá %s\n", nome);
     }
     int main(){
 
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
         
-       saudar();
+       saudar("Geovane");
+       saudar("gottschalk");
+       saudar("Àvila");
 
         return 0;
 
