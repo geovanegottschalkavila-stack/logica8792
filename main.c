@@ -7,16 +7,10 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
         
-       int numeros[6];
+       int numeros[] = {10, 20, 30};
+       int lenght = sizeof(numeros) / sizeof(numeros[0]);
 
-       numeros[0] = 10;
-       numeros[1] = 20;
-       numeros[2] = 30;
-       numeros[3] = 40;
-       numeros[4] = 50;
-       numeros[5] = 60;
-
-       printf("%d", numeros[5]);
+       printf("%d", lenght);
 
 
 
