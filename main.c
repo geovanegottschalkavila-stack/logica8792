@@ -7,12 +7,11 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-        char nomes[4][20] = {"Pedro", "Davi", "Rose", "Geovane"};
+       int idade[3] = {25, 35, 45};
 
-        printf("%s\n", nomes[0]);
-        printf("%s\n", nomes[1]);
-        printf("%s\n", nomes[2]);
-        printf("%s\n", nomes[3]);
+       printf("%s %d %s", "Manoel tem, ", idade[0], "anos!");
+       printf("%s %d %s", "\nlucia tem ", idade[1], "anos!");
+       printf("%s %d %s", "\nmartim tem ", idade[2], "anos!");
 
         return 0;
 
