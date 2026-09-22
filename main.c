@@ -7,10 +7,9 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-       for(int i = 10; i >= 0; i = i -2){
-            printf("%d\n", i);
-       }
+       char carros[3][20] = {"ferrari", "bmw", "mercedes"};
 
+       printf("%s\n", carros[0]);
         return 0;
 
     }
