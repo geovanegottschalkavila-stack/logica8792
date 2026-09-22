@@ -7,6 +7,9 @@
     int subtrair(int a, int b){
         return a - b;
     }
+    int multiplicar( int a, int b){
+        return a * b;
+    }
 
     int main(){
 
@@ -18,6 +21,9 @@
 
        int resultado2 = subtrair(5, 3);
        printf("O resultado da subtração é: %d\n", resultado2);
+
+       int resultado3 = multiplicar(5, 3);
+       printf("o resultado da multiplicação é: %d\n", resultado3);
 
         
        
