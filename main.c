@@ -2,16 +2,11 @@
 #include<windows.h>
 #include<math.h>
 
-    int fibonacci(int termos){
-        int a = 0, b = 1, c;
-        printf("Sequencia de fibonacci (%d termos): \n", termos);
-        for(int i = 1; i <= termos; i++){
-            printf("%d\n", a);
-            c = a + b;
-            a = b;
-            b = c;
+    void tabuada(int n){
+        printf("Tabuada do %d\n", n);
+        for(int i = 1; i <= 10; i++){
+            printf("%d x %d = %d\n", n, i, n * i);
         } 
-        printf("\n");
     }
 
     int main(){
@@ -19,7 +14,7 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
         
-        fibonacci(10);
+        tabuada(6);
        
 
         return 0;
