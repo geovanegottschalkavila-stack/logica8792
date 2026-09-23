@@ -7,15 +7,12 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
 
-       int numero;
-       printf("Digite um numero: ");
-       scanf("%d", &numero);
+       char nome[50];
 
-       int quadrado = (int)pow(numero, 2);
-       int cubo = (int)pow(numero, 3);
-       printf("Quadrado de %d = %d\n", numero, quadrado);
-       printf("cubo de %d = %d", numero, cubo);
+       printf("digite seu nome completo aqui: ");
+       fgets(nome, sizeof(nome), stdin);//lê até encontrar ENTER
 
+       printf("Olá %s", nome);
        
 
         return 0;
