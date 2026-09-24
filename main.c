@@ -10,14 +10,15 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
        
-       int i = 1;
+       int numero;
+       printf("Digite um numero positivo:");
+       scanf("%d", &numero);
 
-       while(i <= 5){
-        printf("%d\n", i);
-        i++;
+       while(numero <= 0){
+            printf("Numero inválido! Digite novamente: ");
+            scanf("%d", &numero);
        }
-        
-       
+       printf("Numero válido: %d\n", numero);
         return 0;
 
     }
