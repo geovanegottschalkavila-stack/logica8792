@@ -2,12 +2,11 @@
 #include<windows.h>
 #include<math.h>
 
-    void verificarEhParImpar(int n){
-        if(n % 2 == 0){
-            printf("%d é ímpar\n", n);
-        }else{
-            printf("%d é ímpar\n", n);
+    void linha(int tamanho){
+        for(int i = 0; i < tamanho; i++){
+            printf("*");
         }
+        printf("\n");
     }
 
     int main(){
@@ -15,9 +14,7 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
        
-       verificarEhParImpar(10);
-       verificarEhParImpar(7);
-       
+       linha(2000);
 
         return 0;
 
