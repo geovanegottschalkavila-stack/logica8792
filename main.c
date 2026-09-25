@@ -10,15 +10,20 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
        
-       int tab;
+       int n;
+       int resultado;
 
-       printf("Digite um numero: ");
-       scanf("%d", &tab);
-       
-       for(int i = 0; i <= 10; i++){
-            int resultado = tab * i;
-            printf("O resultado de %d x %d = %d\n", tab, i, resultado);
-        
+       printf("Digite um numero para a tabuada: ");
+       resultado = scanf("%d", &n);
+
+       if(resultado != 1){
+            printf("Entrada invalia! por favor, digite apenas números!");
+            return 1;
+       }
+
+       for(int i = 1; i <= 10; i++){
+            int resposta = n * i;
+            printf("O resultado de %d x %d é: %d\n", n, i, resposta);
        }
            
 
