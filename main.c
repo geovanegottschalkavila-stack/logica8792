@@ -10,15 +10,16 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
        
-       int n, soma = 0;
+       int n;
+       long long fatorial = 1;
 
        printf("Digite um numero: ");
        scanf("%d", &n);
-       
+
        for(int i = 1; i <= n; i++){
-        soma += i;
+            fatorial *=i;
        }
-       printf("O resultado da soma é: %d\n", soma);
+       printf("Fatorial: %11d\n", fatorial);
 
         return 0;
 
