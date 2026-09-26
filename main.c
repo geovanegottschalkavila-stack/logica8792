@@ -9,18 +9,18 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
        
-       int n, resto, invertido = 0;
-
-       printf("Digite um número: ");
+       int n;
+       float nota, soma = 0;
+       
+       printf("Quantos alunoes tem a turma: ");
        scanf("%d", &n);
-
-       while(n != 0){
-            resto = n % 10;
-            invertido = invertido  * 10 + resto;
-            n /= 10;
+       for(int i = 0; i < n; i++){
+        printf("Digite a nota do aluno %d: \n", i + 1);
+        scanf("%f", &nota);
+        soma += nota;
        }
 
-       printf("Número invertido: %d\n", invertido);
+       printf("Média da turma: %.2f\n", soma / n);
 
         return 0;
 
