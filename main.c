@@ -9,20 +9,18 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
        
-       int n, soma = 0;
-       printf("Digite um numero: ");
+       int n, resto, invertido = 0;
+
+       printf("Digite um número: ");
        scanf("%d", &n);
-       
-       for(int i = 1; i < n; i++){
-            if(n % i == 0){
-                soma += i;
-            }
+
+       while(n != 0){
+            resto = n % 10;
+            invertido = invertido  * 10 + resto;
+            n /= 10;
        }
-       if(soma == n){
-            printf("%d é um numero perfeiro\n", n);
-       }else{
-            printf("%d Não é um número perfeito\n", n);
-       }
+
+       printf("Número invertido: %d\n", invertido);
 
         return 0;
 
