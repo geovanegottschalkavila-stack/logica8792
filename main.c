@@ -9,12 +9,21 @@
        SetConsoleCP(65001);
        SetConsoleOutputCP(65001);
        
-       for(int i = 1; i < 3; i++){
-        for(int j = 1; j < 4; j++){
-            printf("For externo e For interno: %d %d\n", i, j);
-        }
+       int contador = 0; 
+       for(int i = 1; i <= 9; i++){
+            for(int j = 1; j <= 9; j++){
+                for(int k = 1; k <= 9; k++){
+                    for(int l = 1; l <= 9; l++){
+            contador++;
+                printf("Os possiveis resultados do cadeado: %d %d %d %d\n", i, j, k, l);
+                    }
+                 
+                }
+           
+            }
        }
-
+       printf("O número total de interação: %d\n", contador);
+       
         return 0;
 
-    }
+    } 
