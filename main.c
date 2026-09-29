@@ -7,15 +7,17 @@
     int main(){
     
     int n;
-    printf("Digite o tamanho da priramide: ");
+    printf("Digite o número de linhas: ");
     scanf("%d", &n);
 
-    for (int i = 1; i <= n; i++){
-        for(int j = i; j < n; j++){
+    for(int i = 0; i < n; i++){
+        long long valor = 1;
+        for(int espaco = 0; espaco < n - i; espaco++){
             printf(" ");
         }
-        for(int k = 1; k <=(2 * i - 1); k++){
-            printf("*");
+        for(int j = 0; j <= i; j++){
+            printf("%lld", valor);
+            valor = valor * (i - j) / (j + 1);
         }
         printf("\n");
     }
