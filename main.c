@@ -5,22 +5,27 @@
 
 
     int main(){
+        SetConsoleCP(65001);
+        SetConsoleOutputCP(65001);
     
-    int n;
-    printf("Digite o número de linhas: ");
-    scanf("%d", &n);
+        int n, primo = 1;
+        printf("Digite um número: ");
+        scanf("%d", &n);
 
-    for(int i = 0; i < n; i++){
-        long long valor = 1;
-        for(int espaco = 0; espaco < n - i; espaco++){
-            printf(" ");
-        }
-        for(int j = 0; j <= i; j++){
-            printf("%lld", valor);
-            valor = valor * (i - j) / (j + 1);
-        }
-        printf("\n");
-    }
-
+        if(n < 2){
+            primo = 0;
+         } else{
+            for(int i = 2; i < n; i++){
+                if(n % i == 0){
+                    primo = 0;
+                    break;
+                }
+            }
+         }
+                if(primo){
+                printf("%d é primo\n", n);
+                }else{
+                    printf("%d não é primo\n", n);
+            }
         return 0;
     }
