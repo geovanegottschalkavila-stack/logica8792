@@ -8,7 +8,8 @@
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
 
-    int n;
+    
+int n;
 
     printf("Digite o tamanho do vetor: ");
     scanf("%d", &n);
@@ -18,17 +19,15 @@
     for(int i = 0; i < n; i++){
         printf("Digite o valor %d: ", i + 1);
         scanf("%d", &v[i]);
-        if(v[i] < 0){
-            v[i] = 0;
+        if(v[i] % 2 == 0){
+            pares++;
+        }else{
+            impares++;
         }
-            
     }
-    
-    printf("Vetor ajustado: \n");
-    for(int i = 0; i < n; i++){
-        printf("%d", v[i]);
-    }
-    printf("\n");
+    printf("Pares: %d\n", pares);
+    printf("impares: %d\n", impares);
+
 
     return 0;
     }
