@@ -3,15 +3,33 @@
 #include<math.h>
 #include<string.h>
     
-    char* retornarNome(char nome[]) {
-        return nome;
-    }
+    
 
             int main() {
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
      
-                printf("O nome é: %s\n", retornarNome("Geovane"));
+    int voto;
+
+            printf("voto: ");
+            scanf("%d", &voto);
+
+     if(voto == 10){
+    printf("manoel");
+
+    }else if(voto == 20){
+        printf("carla");
+        
+    }else if(voto == 30){
+        printf("bianca");
+
+    }else if(voto == 40){
+        printf("Bruno");
+
+    }else{
+        printf("Voto Inválido, Digite novamente!!!!!");
+        scanf("%d",&voto);
+    }
 
     return 0;
     }
