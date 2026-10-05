@@ -3,15 +3,15 @@
 #include<math.h>
 #include<string.h>
     
-    char* saudacao(){
-            return "Ola, seja bem Vindo(a)!";
-    }    
+    char* retornarNome(char nome[]) {
+        return nome;
+    }
 
             int main() {
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
      
-        printf("%s\n", saudacao());
+                printf("O nome é: %s\n", retornarNome("Geovane"));
 
     return 0;
     }
