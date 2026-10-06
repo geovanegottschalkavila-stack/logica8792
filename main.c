@@ -25,7 +25,9 @@
         printf("Candidato B: %d votos\n", votosB);
         printf("Nulos: %d votos\n", votosNulos);
 
-        if(votosA > votosB){
+        if(votosA == 0 && votosB == 0 && votosNulos > 0){
+            printf(">>>Todos os votos foram nulos. Não houve vencedor.\n");
+        }else if(votosA > votosB){
             printf(">>>> Candidato A venceu!\n");
         }else if(votosB > votosA){
             printf(">>>>>Candidato B venceu!!!!!\n");
@@ -38,6 +40,7 @@
             int main() {
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
+
      
     int voto;
     int totalEleitores = 10;
