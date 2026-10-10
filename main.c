@@ -10,21 +10,12 @@
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
 
-    int numero;
-    int sucesso;
+        int i = 1;
 
-    do{
-        printf("Digite um numero maior que 0: ");
-        sucesso = scanf("%d", &numero);
-
-        if(sucesso != 1){
-            printf("Entrada inválida! Digite apenas números inteiros.\n");
-            while(getchar() != '\n');
-            numero = 0;
-        }
-    }while(numero <= 0);
-
-        printf("Você digitou %d, que é válido!\n", numero);
+        do{
+                printf("%d\n", i);
+                i++;
+        }while(i <= 5);
 
     return 0;
     }
