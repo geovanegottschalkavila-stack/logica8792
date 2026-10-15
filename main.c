@@ -14,15 +14,17 @@
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
 
-        struct pessoa p1 = {"Geovane", 32, 1.84};
-        struct pessoa p2 = {"Pedro", 6, 1};
-        struct pessoa p3 = {"Davi", 13, 1.30};
-
-        printf("Nome: %s | Idade: %d | Altura: %.2f\n", p1.nome, p1.idade, p1.altura);
-        printf("Nome: %s | Idade: %d | Altura: %.2f\n", p2.nome, p2.idade, p2.altura);
-        printf("Nome: %s | Idade: %d | Altura: %.2f\n", p3.nome, p3.idade, p3.altura);
-
-    
+        struct pessoa p1;
+        printf("Digite o nome: ");
+        scanf("%s", p1.nome);
+        printf("Digite a idade: ");
+        scanf("%d", &p1.idade);
+        printf("Digite a Altura: ");
+        scanf("%f", &p1.altura);
+        printf("\n----Dados DA PESSOA----\n");
+        printf("Nome: %s\n", p1.nome);
+        printf("Idade: %d\n", p1.idade);
+        printf("Altura: %.2f\n", p1.altura);
 
     return 0;
 }
