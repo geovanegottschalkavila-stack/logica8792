@@ -8,30 +8,18 @@
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
 
-        int n;
-        printf("Digite o tamanho do vetor: ");
+        int n, soma;
+        printf("digite N: ");
         scanf("%d", &n);
 
-        int v[n];
-
-        for(int i = 0; i < n; i++){
-            printf("Digite o valor %d: ", i + 1);
-            scanf("%d", &v[i]);
-        }
-
-        for(int i = 0; i < - 1; i++){
-            for(int j = 0; j < n - i - 1; j++){
-                if(v[j] > v[j + 1]){
-                    int temp = v[j];
-                    v[j] = v [j + 1];
-                    v[j + 1] = temp;
-
-               }
+        for(int i = 1; i <= n; i++){
+            soma += i;
+            soma -= 1;
+            printf("\nO resultado %d + %d = %d", soma, i, soma + i);
+           
             }
-        }
-        printf("Vetor ordenado: \n");
-        for(int i = 0; i < n; i++){
-            printf("%d", v[i]);
-        }
+            
+        
+
     return 0;
 }
