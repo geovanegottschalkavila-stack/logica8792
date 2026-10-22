@@ -8,15 +8,13 @@
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
 
-        int resposta;
-
+        int numero, soma = 0;
         do {
-            printf("Execute o Programa..\n");
-            printf("Deseja Continuar? (1 - sim / 2 - não):");
-            scanf("%d", &resposta);
-
-        }while(resposta == 1);
-        printf("Programa encerrado!!\n");
+            printf("Digite um número (0 para parar): ");
+            scanf("%d", &numero);
+            soma += numero;
+        }while(numero != 0);
+        printf("Soma: %d\n", soma);
         
     return 0;
 }
