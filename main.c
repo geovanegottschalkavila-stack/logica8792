@@ -8,18 +8,13 @@
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
 
-        int n, soma;
-        printf("digite N: ");
-        scanf("%d", &n);
+        int n;
+        do{
+            printf("Digite um número (Não negativo): ");
+            scanf("%d", &n);
+        }while(n < 0);
 
-        for(int i = 1; i <= n; i++){
-            soma += i;
-            soma -= 1;
-            printf("\nO resultado %d + %d = %d", soma, i, soma + i);
-           
-            }
-            
+        printf("Você digitou: %d\n", n);
         
-
     return 0;
 }
