@@ -8,13 +8,31 @@
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
 
-        int numero, soma = 0;
-        do {
-            printf("Digite um número (0 para parar): ");
-            scanf("%d", &numero);
-            soma += numero;
-        }while(numero != 0);
-        printf("Soma: %d\n", soma);
+        int num;
+        printf("Digite um numero de 1 a 4:");
+        scanf("%d", &num);
+
+        switch (num){
+            case 1:
+            printf("Você digitou o numero um!!");
+            break;
+
+            case 2:
+            printf("Você digitou o número dois!!");
+            break;
+            
+            case 3:
+            printf("Você digitou o número tres!!");
+            break;
+
+            case 4:
+            printf("VocÊ digitou o número Quatro!!!");
+            break;
+
+        }
+
+
+
         
     return 0;
 }
