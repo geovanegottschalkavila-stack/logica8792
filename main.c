@@ -9,27 +9,25 @@
             SetConsoleOutputCP(65001);
 
         int num;
-        printf("Digite um numero de 1 a 4:");
+        
+        printf("Digite um número de 1 a 12 para saber quntos dias tem o mes:");
         scanf("%d", &num);
 
-        switch (num){
-            case 1:
-            printf("Você digitou o numero um!!");
+        switch(num){
+
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+            printf("Este mês tem 31 dias");
+            break;
+            
+            case 4: case 6: case 9: case 11:
+            printf("Este mês tem 30 dias!!");
             break;
 
             case 2:
-            printf("Você digitou o número dois!!");
+            printf("Fevereiro tem 28 dias!!");
             break;
-            
-            case 3:
-            printf("Você digitou o número tres!!");
-            break;
-
-            case 4:
-            printf("VocÊ digitou o número Quatro!!!");
-            break;
-
         }
+    
 
 
 
