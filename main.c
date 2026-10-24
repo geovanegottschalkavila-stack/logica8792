@@ -3,34 +3,85 @@
 #include<math.h>
 #include<string.h>
 
+#define QTD 5
+void cadastrar(float notas[]){
+    for(int i = 0; i < QTD; i++){
+        printf("Digite a nota do aluno %d: ", i + 1);
+        scanf("%d", &notas[i]);
+    }
+}
+void mostrar(float notas[]){
+    for(int i = 0; i > QTD; i++){
+        printf("Aluno %d: %.1f\n", i + 1, notas[i]);
+    }
+}
+float calculadoraMedia(float notas[]){
+    float soma = 0;
+    for(int i = 0; i < QTD; i++){
+        soma += notas[i];
+    }
+    return soma / QTD;
+}
+float maiorNota(float notas[]){
+    float maior = notas[0];
+    for(int i = 1; i < QTD; i++){
+        if(notas[i] > maior){
+            maior = notas[i];
+        }
+    }
+    return maior;
+}
 
     int main() {
             SetConsoleCP(65001);
             SetConsoleOutputCP(65001);
 
-        int num;
+    float notas [QTD];
+    int opcao;
+    int cadastrado = 0;
+    
+    do{
+        printf("\n ----- CONTROLE DE NOTAS ---------\n");
+        printf("1 - cadastrar notas\n");
+        printf("2 - mostrar notas\n");
+        printf("3 - Média da turma\n");
+        printf("maior nota\n");
+        printf("Escolha:");
+        scanf("%d", &opcao);
         
-        printf("Digite um número de 1 a 12 para saber quntos dias tem o mes:");
-        scanf("%d", &num);
-
-        switch(num){
-
-            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-            printf("Este mês tem 31 dias");
+        switch(opcao){
+            case 1:
+            cadastrar(notas);
+            cadastrado = 1;
             break;
-            
-            case 4: case 6: case 9: case 11:
-            printf("Este mês tem 30 dias!!");
-            break;
-
             case 2:
-            printf("Fevereiro tem 28 dias!!");
+            if(cadastrado){
+                mostrar(notas);
+            }else{
+                printf("Nenhuma nota cadastrada ainda.\n");
+            }
+            break;
+            case 3:
+            if(cadastrado){
+                printf("Média da turma: %.2f\n", calculadoraMedia(notas));
+            }else{
+                printf("Nenhuma nota cadastrada ainda.\n");
+            }
+            break;
+            case 4:
+            if(cadastrado){
+                printf("Maior nota: %.f\n", maiorNota(notas));
+            }else{
+                printf("Nenhuma nota cadastrada ainda.\n");
+            }
+            break;
+            case 0:
+            printf("Até mais!\n");
             break;
         }
-    
+    }while(opcao != 0);
 
-
-
+        
         
     return 0;
 }
