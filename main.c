@@ -6,21 +6,29 @@
 #include<stdlib.h>
 #include<time.h>
 
+    
 
-    void saudacao(char nome[]){
-        printf("Ola %s\n", nome);
+    void soma1(){
+        int x, y, resultado;
+        printf("\nDigite um valor para x: ");
+        scanf("%d", &x);
+        printf("\nDigite um valor para y: ");
+        scanf("%d", &y);
+        resultado = x + y;
+        printf("\nA soma de %d + %d = %d", x, y, resultado);
+
     }
-    int soma(int a, int b){
-        return a + b;
-    }
+    
+    
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    saudacao("Geovane");
-    int resultado = soma(5, 5);
-    printf("%d", resultado);
+    
+  
+
+    soma1();
 
     return 0;
 }
