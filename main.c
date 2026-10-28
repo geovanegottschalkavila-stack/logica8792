@@ -5,30 +5,49 @@
 #include<locale.h>
 #include<stdlib.h>
 #include<time.h>
-
-    
-
-    void soma1(){
-        int x, y, resultado;
-        printf("\nDigite um valor para x: ");
-        scanf("%d", &x);
-        printf("\nDigite um valor para y: ");
-        scanf("%d", &y);
-        resultado = x + y;
-        printf("\nA soma de %d + %d = %d", x, y, resultado);
-
-    }
-    
     
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    
-  
+    char placa[20] ="";
+    int opcao;
 
-    soma1();
+    
+
+     do {
+            printf("\n-------REGISTRO DE PLACA--------\n");
+            printf("1 - Registrar placa\n");
+            printf("2 - Ver placa registrada\n");
+            printf("3 - Sair\n");
+            printf("Escolha uma opção:");
+            scanf("%d", &opcao);
+            
+            switch(opcao){
+                    
+                case 1:
+                    printf("Digite a placa do veiculo:");
+                    scanf("%s", placa);
+                    break;
+
+                case 2:
+                    if(strlen(placa)== 0){
+                        printf("Nenhuma placa registrada.\n");
+                    }else{
+                        printf("Placa registrada:%s\n", placa);
+                    }
+                    break;
+
+                case 3:
+                    printf("Saindo do sistema...\n");
+                    break;
+                default:
+                    printf("Opção inválida!");
+            }
+
+        }while(opcao != 3);
+       
 
     return 0;
 }
