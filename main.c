@@ -6,8 +6,8 @@
 #include<stdlib.h>
 #include<time.h>
 
-    int dobro(int numero){
-        return numero * 2;
+    void mostrarNome(char nome[]){
+        printf("Nome: %s\n", nome);
     }
 
 int main() {
@@ -15,8 +15,7 @@ int main() {
     SetConsoleOutputCP(65001);
 
 
-    int valor = 8;
-    printf("Dobro = %d\n", dobro(valor));
+    mostrarNome("Geovane");
     
 
     return 0;
