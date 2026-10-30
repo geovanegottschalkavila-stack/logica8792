@@ -6,27 +6,20 @@
 #include<stdlib.h>
 #include<time.h>
 
-    int quadrado(int numero){
-        return numero * numero;
+    void linha(int n){
+        for(int i = 0; i < n; i++){
+            printf("-");
+        printf("\n");
+        }
     }
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int n;
-    int numero;
-
-    printf("Digite um numero pra saber o quadrado:");
-    scanf("%d", &numero);
-    n = quadrado(numero);
-
-
-    printf("o quadrado é:%d", n);
-
-
-    
-    
+    linha (30);
+    printf("BEM-VINDO AO SISTEMA\n");
+    linha(30);
 
     return 0;
 }
