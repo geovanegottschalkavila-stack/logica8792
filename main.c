@@ -12,18 +12,14 @@ int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int vet[10];
-    for(int i = 0; i < 10; i++){
-        printf("Valor %d: ", i + 1);
-        scanf("%d", &vet[i]);
-    
-    }
-    printf("\nVetor: ");
-    for(int i = 0; i < 10; i++){
-        printf("%d", vet[i]);
-        printf("\n");
-    }
-    
+   int numeros[5];
+   int soma = 0;
+   for(int i = 0; i < 5; i++){
+    printf("Digite o %d número: ", i + 1);
+    scanf("%d", &numeros[i]);
+    soma = soma + numeros[i];
+   }
+   printf("\nSoma = %d\n", soma);
 
     return 0;
 }
