@@ -6,37 +6,31 @@
 #include<stdlib.h>
 #include<time.h>
 
-    
+    void mostraVetor(int v[], int n){
+        for(int i; i < n; i++){
+            printf("%d", v[i]);
+        }
+        printf("\n");
+    }
+    void inverterVetor(int v[], int n){
+        for(int i = 0; i < n / 2; i++){
+            int temp = v[i];
+            v[i] = v[n - 1 - i];
+            v[n - 1 - i] = temp;
+        }
+    }
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int m[3][3] = {
-        {1, 2, 3},
-        {4, 5, 6}
-    };
-    int t[3][2];
-    for(int i = 0; i < 2; i++){
-        for(int j = 0; j < 3; j++){
-            t[j][i] = m [i][j];
-        }
-    }
-    printf("Original (2x3)\n");
-    for(int i = 0; i < 2; i++){
-        for(int j = 0; j < 3; j++){
+    int numeros[5] = {1, 2, 3, 4, 5};
+    printf("Antes: ");
+    mostraVetor(numeros, 5);
+    inverterVetor(numeros, 5);
+    printf("Depois: ");
+    mostraVetor(numeros, 5);
     
-            printf("%d", m[i][j]);
-    }
-    printf("\n");
-}
-printf("\ntransposta(3x2):\n");
-for(int i = 0; i < 3; i++){
-    for(int j = 0; j < 2; j++){
-    printf("%d", t[i][j]);
-}
-printf("\n");
-}
     
 
     return 0;
