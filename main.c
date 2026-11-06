@@ -6,19 +6,19 @@
 #include<stdlib.h>
 #include<time.h>
 
-int fatorial(int numero){
-    if(numero == 0 || numero == 1){
-        return 1;
+int somar(int n){
+    if(n == 0){
+        return 0;
     }
-    return numero * fatorial(numero - 1);
+    return n + somar(n - 1);
 }
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int resultado = fatorial(5);
-    printf("Fatorial:%d\n", resultado);    
+    int resultado = somar(5);
+    printf("Resultado:%d\n", resultado);
 
     return 0;
 }
