@@ -6,19 +6,18 @@
 #include<stdlib.h>
 #include<time.h>
 
-int somar(int n){
-    if(n == 0){
-        return 0;
+int potencia(int base, int expoente){
+    if(expoente == 0){
+        return 1;
     }
-    return n + somar(n - 1);
+    return base * potencia(base, expoente - 1);
 }
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int resultado = somar(5);
-    printf("Resultado:%d\n", resultado);
+    printf("Resultado:%d\n", potencia(2, 4));
 
     return 0;
 }
