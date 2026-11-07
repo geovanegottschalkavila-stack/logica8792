@@ -6,24 +6,23 @@
 #include<stdlib.h>
 #include<time.h>
 
-int fibonacci(int n){
-    if(n == 0){
-        return 0;
+int buscar(int vetor[], int tamanho, int valor){
+    if(tamanho == 0){
+        return - 1;
     }
-    if(n == 1){
-        return 1;
+    if(vetor[tamanho - 1] == valor){
+        return tamanho - 1;
     }
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return buscar(vetor, tamanho - 1, valor);
 }
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int i;
-    for(i = 0; i < 10; i++){
-        printf("%d ", fibonacci(i));
-    }
+    int numeros[] = {10, 20, 30, 40, 50};
+    int posicao = buscar(numeros, 5, 30);
+    printf("Posição:%d\n", posicao);
 
     return 0;
 }
