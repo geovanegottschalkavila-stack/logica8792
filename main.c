@@ -5,22 +5,20 @@
 #include<locale.h>
 #include<stdlib.h>
 #include<time.h>
-
     
-    int soma(int n){
-        int total = 0;
-        for(int i = 1; i <= n; i++){
-            total += i;
-        }
-        return total;
+int potencia(int base, int expoente){
+    int resultado = 1;
+    for(int i = 0; i < expoente; i++){
+        resultado *= base;
     }
+    return resultado;
+}
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    printf("Soma de 1 até.. %d\n", soma(10));
-
+    printf("2 elevado a 5 = %d\n", potencia(2, 5));
 
     return 0;
 }
