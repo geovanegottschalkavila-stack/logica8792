@@ -6,15 +6,22 @@
 #include<stdlib.h>
 #include<time.h>
 
-    float areaRetangulo(float base, float altura){
-        return base * altura;
+    float celsiusParaFahrenheit(){
+        float celsius;
+        printf("Digite a temperatura em celsius:");
+        scanf("%f", &celsius);
+        return celsius * 9 / 5 + 32;
+
     }
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
+    
+    float fahrenheit;
 
-   printf("Area: %.2fn", areaRetangulo(5, 3.5));
+    fahrenheit = celsiusParaFahrenheit();
+    printf("Temperatura em fahrenheit: %.1f F\n", fahrenheit);
 
     return 0;
 }
