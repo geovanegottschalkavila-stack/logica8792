@@ -6,22 +6,21 @@
 #include<stdlib.h>
 #include<time.h>
 
-    float celsiusParaFahrenheit(){
-        float celsius;
-        printf("Digite a temperatura em celsius:");
-        scanf("%f", &celsius);
-        return celsius * 9 / 5 + 32;
-
+    
+    int soma(int n){
+        int total = 0;
+        for(int i = 1; i <= n; i++){
+            total += i;
+        }
+        return total;
     }
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
     
-    float fahrenheit;
+    printf("Soma de 1 até.. %d\n", soma(10));
 
-    fahrenheit = celsiusParaFahrenheit();
-    printf("Temperatura em fahrenheit: %.1f F\n", fahrenheit);
 
     return 0;
 }
