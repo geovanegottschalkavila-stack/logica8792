@@ -6,19 +6,25 @@
 #include<stdlib.h>
 #include<time.h>
     
-int potencia(int base, int expoente){
-    int resultado = 1;
-    for(int i = 0; i < expoente; i++){
-        resultado *= base;
+int somaDigitos(int n){
+    int soma = 0;
+    while(n != 0){
+        soma += n % 10;
+        n /= 10; 
     }
-    return resultado;
+    return soma;
 }
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
+
+    int numero;
+
+    printf("Digite um digito inteiro:");
+    scanf("%d", &numero);
     
-    printf("2 elevado a 5 = %d\n", potencia(2, 5));
+    printf("soma dos digitos é: %d\n", somaDigitos(numero));
 
     return 0;
 }
