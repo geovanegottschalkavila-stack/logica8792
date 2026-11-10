@@ -6,13 +6,8 @@
 #include<stdlib.h>
 #include<time.h>
     
-int somaDigitos(int n){
-    int soma = 0;
-    while(n != 0){
-        soma += n % 10;
-        n /= 10; 
-    }
-    return soma;
+int quadrado(int n){
+    return n * n;
 }
 
 int main() {
@@ -21,10 +16,12 @@ int main() {
 
     int numero;
 
-    printf("Digite um digito inteiro:");
+    printf("Digite um numero para saber ao quadrado:");
     scanf("%d", &numero);
+
+    printf("O quadrado é:%d", quadrado(numero));
+
     
-    printf("soma dos digitos é: %d\n", somaDigitos(numero));
 
     return 0;
 }
