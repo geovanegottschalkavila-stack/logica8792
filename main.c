@@ -13,15 +13,14 @@ int main() {
     SetConsoleOutputCP(65001);
 
     int total = 0;
-    for(int i = 10; i <= 99; i++){
-        int dezena = i / 10;
+    for(int i = 100; i <= 999; i++){
+        int centena = i / 100;
         int unidade = i % 10;
-        if(unidade == dezena * 2){
-            printf("%d\n", i);
+        if(centena == unidade){
             total++;
         }
     }
-    printf("Números com o dobro da dezena: %d\n", total);
-    
+    printf("Palíndromo do 3 dígitos: %d\n", total);
+
     return 0;
 }
