@@ -12,15 +12,25 @@ int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    int total = 0;
-    for(int i = 100; i <= 999; i++){
-        int centena = i / 100;
-        int unidade = i % 10;
-        if(centena == unidade){
-            total++;
+    char palavra[50];
+    int tamanho;
+    int palindromo = 1;
+
+    printf("Digite uma palávra: ");
+    scanf("%49s", palavra);
+
+    tamanho = strlen(palavra);
+
+    for(int i = 0; i < tamanho / 2; i++){
+        if(palavra[i] != palavra[tamanho -1 -i]){
+            palindromo = 0;
         }
     }
-    printf("Palíndromo do 3 dígitos: %d\n", total);
+    if(palindromo == 1){
+        printf("A palávra é um palíndromo!\n");
+    }else{
+        printf("A palávra não é um palíndromo!\n");
+    }
 
     return 0;
 }
