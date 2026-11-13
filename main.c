@@ -6,19 +6,21 @@
 #include<stdlib.h>
 #include<time.h>
     
-int somaPares(int n){
-    int soma = 0;
-    for(int i = 2; i <= n;i += 2){
-        soma += i;
-    }
-    return soma;
-}
+
 
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    printf("Soma dos pares até 10: %d\n", somaPares(10));
+    int total = 0;
+    for(int i = 10; i <= 99; i++){
+        int dezena = i / 10;
+        int unidade = i % 10;
+        if(unidade > dezena){
+            total++;
+        }
+    }
+    printf("Números com unidade maior que a dezena: %d\n", total);
    
     return 0;
 }
