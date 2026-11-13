@@ -16,11 +16,12 @@ int main() {
     for(int i = 10; i <= 99; i++){
         int dezena = i / 10;
         int unidade = i % 10;
-        if(unidade > dezena){
+        if(unidade == dezena * 2){
+            printf("%d\n", i);
             total++;
         }
     }
-    printf("Números com unidade maior que a dezena: %d\n", total);
-   
+    printf("Números com o dobro da dezena: %d\n", total);
+    
     return 0;
 }
